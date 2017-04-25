@@ -21,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
 
         RecyclerView list = (RecyclerView) findViewById(R.id.list);
         list.setAdapter(new Adapter(this));
+        list.setLayoutManager(new LinearLayoutManager(this));
     }
 
     @Override
